@@ -62,7 +62,7 @@ function gameOver(gameWon) {
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
 	}
-	declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
+	declareWinner(gameWon.player == huPlayer ? "You win!" : "You are still in the Matrix");
 }
 
 function declareWinner(who) {
@@ -84,7 +84,7 @@ function checkTie() {
 			cells[i].style.backgroundColor = "green";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
-		declareWinner("Tie Game!")
+		declareWinner("Tie Game. Hello Mr. Anderson.")
 		return true;
 	}
 	return false;
@@ -139,11 +139,3 @@ function minimax(newBoard, player) {
 	}
 	return moves[bestMove];
 }
-
-
-
-
-
-
-
-
