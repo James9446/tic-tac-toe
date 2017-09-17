@@ -1,9 +1,18 @@
+body {
+	color: #00FF00;
+}
+
 table {
 	border-collapse: collapse;
 	position: absolute;
 	left: 50%;
 	margin-left: -155px;
 	top: 50px;
+}
+
+table tr td {
+	border-color: #00FF00;
+	border-width: 3px;
 }
 
 table tr:first-child td {
@@ -33,11 +42,21 @@ td {
 	cursor: pointer;
 }
 
+td:hover {
+	border: 2px solid #00FF00;
+	/*background-color: #00FF00;*/
+	border-radius: 30px;
+}
+
+td:active {
+	background-color: #00FF00;
+}
+
 .endgame {
    display: none;
    width: 200px;
    top: 120px;
-   background-color: rgba(205,133,63, 0.8);
+   background-color: #000;
    position: absolute;
    left: 50%;
    margin-left: -100px;
@@ -48,3 +67,19 @@ td {
    color: white;
    font-size: 2em;
  }
+
+ .endgame button {
+ 	width: 75%;
+ 	background-color: grey;
+ 	color: darkgrey;
+ 	border-radius: 20px;
+ }
+
+ .endgame button:active {
+ 	background-color: blue;
+ }
+
+ /* Matrix code ---------------- */
+ * { margin: 0; padding:0; }
+html, body { background-color: black; }
+canvas { display: block; }
