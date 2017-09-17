@@ -8,7 +8,7 @@ var SZ = 12;
 var pos = [];
 var charsets = [
   "abcdefghijklmnopqrstuvwxyz",
-  "TICTAC"
+  "XO"
 ];
 var charset = charsets[1].split("");
 
